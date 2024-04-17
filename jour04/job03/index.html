@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Formulaire de Tri</h2>
+    <form id="filter-form">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id">
+
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+            <option value="">Tous les types</option>
+            <!-- Les options seront générées par JavaScript -->
+        </select>
+
+        <input type="button" id="filter" value="Filtrer">
+    </form>
+
+    <div id="results">
+        <!-- Les résultats filtrés s'afficheront ici -->
+    </div>
+
+    <div id="resultat"></div>
+</body>
+</html>
